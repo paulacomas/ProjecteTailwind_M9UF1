@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil</title>
     <link href="../css/main.css" rel="stylesheet" />
-    <style>
-      #menu-toggle:checked ~ #side-menu {
-        transform: translateX(0);
-      }
-      #side-menu {
-        transform: translateX(-100%);
-      }
-    </style>
+    <script src="../main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body class="relative overflow-x-hidden bg-gray-900 text-white">
     <header class="hidden items-center justify-between bg-gray-800 p-4 md:flex">
@@ -28,23 +25,56 @@
             <a href="new_object.html" class="hover:text-gray-400">New Post</a>
           </li>
           <li><a href="xat.html" class="hover:text-gray-400">Messages</a></li>
-          <li><a href="search.html" class="hover:text-gray-400">Search</a></li>
-          <li><a href="perfil.html" class="hover:text-gray-400">Profile</a></li>
+          <li><a href="serch.html" class="hover:text-gray-400">Search</a></li>
+          <li>
+            <a href="perfil.html" class="hover:text-gray-400">Profile</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <header class="flex items-center justify-between bg-gray-800 p-4 md:hidden">
       <div class="text-xl">Home</div>
-      <label for="menu-toggle" class="cursor-pointer text-xl">
+      <label
+        for="menu-toggle"
+        class="cursor-pointer text-xl"
+        onclick="toggleMenu()"
+      >
         <div class="space-y-1">
           <div class="h-0.5 w-6 bg-white"></div>
           <div class="h-0.5 w-6 bg-white"></div>
           <div class="h-0.5 w-6 bg-white"></div>
         </div>
       </label>
-      <input type="checkbox" id="menu-toggle" class="hidden" />
     </header>
+
+    <aside
+      id="side-menu"
+      class="fixed right-0 top-16 z-50 h-full w-64 translate-x-full transform bg-gray-800 p-6 transition-transform duration-300 ease-in-out md:hidden"
+    >
+      <ul class="space-y-6">
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">home</span>
+          <a href="#" class="text-white">Home</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">add</span>
+          <a href="new_object.html" class="text-white">New Post</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">message</span>
+          <a href="#" class="text-white">Messages</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">search</span>
+          <a href="serch.html" class="text-white">Search</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">person</span>
+          <a href="#" class="text-white">Profile</a>
+        </li>
+      </ul>
+    </aside>
     <main class="mx-auto max-w-6xl p-4">
       <div class="min-h-screen bg-gray-900 p-4 font-sans text-white">
         <!-- Profile Section -->
