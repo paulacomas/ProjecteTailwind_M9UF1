@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+    <link href="../css/main.css" rel="stylesheet" />
+    <style>
+      #menu-toggle:checked ~ #side-menu {
+        transform: translateX(0);
+      }
+      #side-menu {
+        transform: translateX(-100%);
+      }
+    </style>
+  </head>
+  <body class="relative overflow-x-hidden bg-gray-900 text-white">
+    <header class="hidden items-center justify-between bg-gray-800 p-4 md:flex">
+      <div class="text-xl">Home</div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li>
+            <a href="../../public/index.html" class="hover:text-gray-400"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="new_object.html" class="hover:text-gray-400">New Post</a>
+          </li>
+          <li><a href="xat.html" class="hover:text-gray-400">Messages</a></li>
+          <li><a href="search.html" class="hover:text-gray-400">Search</a></li>
+          <li><a href="perfil.html" class="hover:text-gray-400">Profile</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="flex items-center justify-between bg-gray-800 p-4 md:hidden">
+      <div class="text-xl">Home</div>
+      <label for="menu-toggle" class="cursor-pointer text-xl">
+        <div class="space-y-1">
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+        </div>
+      </label>
+      <input type="checkbox" id="menu-toggle" class="hidden" />
+    </header>
+    <main class="mx-auto max-w-6xl p-4">
+      <div class="min-h-screen bg-gray-900 p-4 font-sans text-white">
+        <!-- Profile Section -->
+        <div class="flex flex-col items-center">
+          <img
+            src="https://via.placeholder.com/100"
+            alt="Profile Picture"
+            class="mb-4 h-24 w-24 rounded-full object-cover"
+          />
+          <h2 class="text-xl font-semibold">Paula</h2>
+          <button
+            class="mx-auto mt-4 block max-w-xs rounded-lg bg-gray-700 px-4 py-2 text-center text-sm"
+          >
+            Editar perfil
+          </button>
+          <p class="mt-4 max-w-xs text-center text-gray-300">
+            I'm a UX designer who loves to travel. I have a lot of items that
+            are gently used and would love to find a new home.
+          </p>
+        </div>
+
+        <div class="mt-8">
+          <h3 class="mb-4 text-lg font-semibold">Els teus objectes</h3>
+          <!-- Logica similar a la seccion de intercanvis -->
+          <div
+            class="flex space-x-4 overflow-x-auto md:grid md:grid-cols-2 md:gap-4 md:space-x-0 lg:grid-cols-4"
+          >
+            <!-- Item Card -->
+            <div
+              class="flex w-64 flex-none flex-col items-center rounded-lg bg-gray-800 p-4 md:w-auto"
+            >
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Coffee Machine"
+                class="mb-2 h-24 w-full rounded-lg object-cover"
+              />
+              <p class="text-center">Coffee Machine</p>
+            </div>
+            <!-- Item Card -->
+            <div
+              class="flex w-64 flex-none flex-col items-center rounded-lg bg-gray-800 p-4 md:w-auto"
+            >
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Designer Bag"
+                class="mb-2 h-24 w-full rounded-lg object-cover"
+              />
+              <p class="text-center">Designer Bag</p>
+            </div>
+            <!-- Item Card -->
+            <div
+              class="flex w-64 flex-none flex-col items-center rounded-lg bg-gray-800 p-4 md:w-auto"
+            >
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Designer Bag"
+                class="mb-2 h-24 w-full rounded-lg object-cover"
+              />
+              <p class="text-center">Designer Bag</p>
+            </div>
+            <!-- Item Card -->
+            <div
+              class="flex w-64 flex-none flex-col items-center rounded-lg bg-gray-800 p-4 md:w-auto"
+            >
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Yoga Mat"
+                class="mb-2 h-24 w-full rounded-lg object-cover"
+              />
+              <p class="text-center">Yoga Mat</p>
+            </div>
+          </div>
+
+          <button
+            class="mx-auto mt-4 block max-w-xs rounded-lg bg-gray-700 px-4 py-2 text-center text-sm"
+          >
+            Veure mes objectes
+          </button>
+        </div>
+
+        <div class="mt-8">
+          <h3 class="mb-4 text-lg font-semibold">Els teus intercanvis</h3>
+          <div
+            class="flex space-x-4 overflow-x-auto md:grid md:grid-cols-2 md:gap-4 md:space-x-0 lg:grid-cols-3"
+          >
+            <!-- Item 1 -->
+            <div
+              class="flex w-64 flex-none flex-col items-center rounded-lg bg-gray-800 p-4 md:w-auto"
+            >
+              <div class="mb-3 flex items-center">
+                <img
+                  src="img/img-perfil.png"
+                  alt="Alberto"
+                  class="h-12 w-12 rounded-full"
+                />
+                <span class="ml-3 text-lg font-semibold">Alberto</span>
+              </div>
+              <div class="flex items-center">
+                <img
+                  src="img/img1.png"
+                  alt="item 1"
+                  class="h-20 w-20 rounded-lg object-cover sm:h-24 sm:w-24 md:h-32 md:w-32"
+                />
+                <span class="mx-2 text-lg">⇄</span>
+                <img
+                  src="img/img2.png"
+                  alt="item 2"
+                  class="h-20 w-20 rounded-lg object-cover sm:h-24 sm:w-24 md:h-32 md:w-32"
+                />
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div
+              class="flex w-64 flex-none flex-col items-center rounded-lg bg-gray-800 p-4 md:w-auto"
+            >
+              <div class="mb-3 flex items-center">
+                <img
+                  src="https://via.placeholder.com/40"
+                  alt="Alberto"
+                  class="h-12 w-12 rounded-full"
+                />
+                <span class="ml-3 text-lg font-semibold">Alberto</span>
+              </div>
+              <div class="flex items-center">
+                <img
+                  src="https://via.placeholder.com/40"
+                  alt="item 1"
+                  class="h-20 w-20 rounded-lg object-cover sm:h-24 sm:w-24 md:h-32 md:w-32"
+                />
+                <span class="mx-2 text-lg">⇄</span>
+                <img
+                  src="https://via.placeholder.com/40"
+                  alt="item 2"
+                  class="h-20 w-20 rounded-lg object-cover sm:h-24 sm:w-24 md:h-32 md:w-32"
+                />
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div
+              class="flex w-64 flex-none flex-col items-center rounded-lg bg-gray-800 p-4 md:w-auto"
+            >
+              <div class="mb-3 flex items-center">
+                <img
+                  src="https://via.placeholder.com/40"
+                  alt="Alberto"
+                  class="h-12 w-12 rounded-full"
+                />
+                <span class="ml-3 text-lg font-semibold">Alberto</span>
+              </div>
+              <div class="flex items-center">
+                <img
+                  src="https://via.placeholder.com/40"
+                  alt="item 1"
+                  class="h-20 w-20 rounded-lg object-cover sm:h-24 sm:w-24 md:h-32 md:w-32"
+                />
+                <span class="mx-2 text-lg">⇄</span>
+                <img
+                  src="https://via.placeholder.com/40"
+                  alt="item 2"
+                  class="h-20 w-20 rounded-lg object-cover sm:h-24 sm:w-24 md:h-32 md:w-32"
+                />
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="mx-auto mt-4 block max-w-xs rounded-lg bg-gray-700 px-4 py-2 text-center text-sm"
+          >
+            Veure mes intercanvis
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
