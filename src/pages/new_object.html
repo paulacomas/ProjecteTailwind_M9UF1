@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xat</title>
+    <title>New object</title>
     <link href="../css/main.css" rel="stylesheet" />
     <script src="../main.js"></script>
     <link
@@ -13,7 +13,7 @@
   </head>
   <body class="relative overflow-x-hidden bg-gray-900 text-white">
     <header class="hidden items-center justify-between bg-gray-800 p-4 md:flex">
-      <div class="text-xl">Xat</div>
+      <div class="text-xl">New object</div>
       <nav>
         <ul class="flex space-x-6">
           <li>
@@ -34,7 +34,7 @@
     </header>
 
     <header class="flex items-center justify-between bg-gray-800 p-4 md:hidden">
-      <div class="text-xl">Xat</div>
+      <div class="text-xl">Home</div>
       <label
         for="menu-toggle"
         class="cursor-pointer text-xl"
@@ -75,71 +75,72 @@
         </li>
       </ul>
     </aside>
+
     <main class="mx-auto max-w-6xl p-4">
-      <div class="px-4 py-3">
-        <input
-          type="text"
-          placeholder="Cerca usuaris"
-          class="w-full rounded-lg bg-gray-700 p-2 text-white focus:outline-none"
-        />
-      </div>
+      <header class="mb-6 flex items-center justify-between">
+        <h1 class="text-2xl font-semibold">Nou objecte</h1>
+      </header>
 
-      <div class="space-y-3 px-4">
-        <div class="flex items-center rounded-lg bg-gray-800 p-3">
-          <img
-            class="h-12 w-12 rounded-full object-cover"
-            src="https://via.placeholder.com/150"
-            alt="User profile picture"
+      <form class="space-y-6">
+        <div>
+          <label for="name" class="mb-2 block text-sm font-medium">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="block w-full rounded-lg border-none bg-gray-800 p-3 focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter name"
           />
-          <div class="ml-4">
-            <h2 class="text-md font-semibold">Laura</h2>
-            <p class="text-sm text-gray-400">Últim missatge</p>
+        </div>
+
+        <div>
+          <label for="description" class="mb-2 block text-sm font-medium"
+            >Descripcio</label
+          >
+          <textarea
+            id="description"
+            rows="4"
+            class="block w-full rounded-lg border-none bg-gray-800 p-3 focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter description"
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="price" class="mb-2 block text-sm font-medium">Preu</label>
+          <input
+            type="text"
+            id="price"
+            class="block w-full rounded-lg border-none bg-gray-800 p-3 focus:ring-2 focus:ring-blue-500"
+            placeholder="Enter price"
+          />
+        </div>
+
+        <div>
+          <label class="mb-2 block text-sm font-medium">Fotos</label>
+          <div class="flex space-x-4">
+            <div class="h-24 w-24 rounded-lg bg-gray-700">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Uploaded Image"
+                class="h-full w-full rounded-lg object-cover"
+              />
+            </div>
+
+            <label
+              class="flex h-24 w-24 cursor-pointer items-center justify-center rounded-lg bg-gray-800"
+            >
+              <span class="text-4xl text-gray-400">+</span>
+              <input type="file" class="hidden" />
+            </label>
           </div>
         </div>
 
-        <div class="flex items-center rounded-lg bg-gray-800 p-3">
-          <img
-            class="h-12 w-12 rounded-full object-cover"
-            src="https://via.placeholder.com/150"
-            alt="User profile picture"
-          />
-          <div class="ml-4">
-            <h2 class="text-md font-semibold">Alberto</h2>
-            <p class="text-sm text-gray-400">Últim missatge</p>
-          </div>
-        </div>
-
-        <div class="flex items-center rounded-lg bg-gray-800 p-3">
-          <img
-            class="h-12 w-12 rounded-full object-cover"
-            src="https://via.placeholder.com/150"
-            alt="User profile picture"
-          />
-          <div class="ml-4">
-            <h2 class="text-md font-semibold">Marcos</h2>
-            <p class="text-sm text-gray-400">Últim missatge</p>
-          </div>
-        </div>
-      </div>
-
-      <button
-        class="fixed bottom-6 right-6 rounded-full bg-blue-500 p-4 text-white shadow-lg focus:outline-none"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
+        <button
+          type="submit"
+          class="w-full rounded-lg bg-blue-600 p-3 text-center font-semibold text-white"
         >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 4v16m8-8H4"
-          />
-        </svg>
-      </button>
+          Continue
+        </button>
+      </form>
     </main>
   </body>
 </html>

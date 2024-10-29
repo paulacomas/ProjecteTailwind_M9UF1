@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/main.css" rel="stylesheet" />
+    <script src="../main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Search</title>
+  </head>
+
+  <body class="relative overflow-x-hidden bg-gray-900 text-white">
+    <header class="hidden items-center justify-between bg-gray-800 p-4 md:flex">
+      <div class="text-xl">Search</div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="../../public/index.html" class="hover:text-gray-400">Home</a></li>
+          <li>
+            <a href="new_object.html" class="hover:text-gray-400"
+              >New Post</a
+            >
+          </li>
+          <li>
+            <a href="xat.html" class="hover:text-gray-400"
+              >Messages</a
+            >
+          </li>
+          <li>
+            <a href="serch.html" class="hover:text-gray-400"
+              >Search</a
+            >
+          </li>
+          <li>
+            <a href="perfil.html" class="hover:text-gray-400"
+              >Profile</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="flex items-center justify-between bg-gray-800 p-4 md:hidden">
+      <div class="text-xl">Search</div>
+      <label
+        for="menu-toggle"
+        class="cursor-pointer text-xl"
+        onclick="toggleMenu()"
+      >
+        <div class="space-y-1">
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+          <div class="h-0.5 w-6 bg-white"></div>
+        </div>
+      </label>
+    </header>
+
+    <aside
+      id="side-menu"
+      class="fixed right-0 top-16 z-50 h-full w-64 translate-x-full transform bg-gray-800 p-6 transition-transform duration-300 ease-in-out md:hidden"
+    >
+      <ul class="space-y-6">
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">home</span>
+          <a href="#" class="text-white">Home</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">add</span>
+          <a href="new_object.html" class="text-white">New Post</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">message</span>
+          <a href="#" class="text-white">Messages</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">search</span>
+          <a href="serch.html" class="text-white">Search</a>
+        </li>
+        <li class="flex items-center space-x-3">
+          <span class="material-icons">person</span>
+          <a href="#" class="text-white">Profile</a>
+        </li>
+      </ul>
+    </aside>
+
+    <div class="mb-4 mx-auto max-w-6xl p-4 pb-0">
+      <input
+        type="text"
+        placeholder="cerca items"
+        class="block w-full rounded-lg border-none bg-gray-800 p-3 text-white focus:ring-2 focus:ring-blue-500"
+      />
+    </div>
+
+    <div class="mb-4 flex space-x-3 mx-auto max-w-6xl p-4 pt-1">
+      <button class="rounded-full bg-gray-800 px-4 py-2 text-white">
+        Tots
+      </button>
+      <button class="rounded-full bg-gray-800 px-4 py-2 text-white">
+        Mobles
+      </button>
+      <button class="rounded-full bg-gray-800 px-4 py-2 text-white">
+        Neteja
+      </button>
+      <button class="rounded-full bg-gray-800 px-4 py-2 text-white">pc</button>
+    </div>
+
+    <div class="mb-6 mx-auto max-w-6xl p-4">
+      <label for="price-range" class="mb-2 block text-sm font-medium"
+        >Valor</label
+      >
+      <div class="flex items-center justify-between">
+        <span>Selecciona el rang de preu</span>
+        <span>20 - 25</span>
+      </div>
+      <input
+        id="price-range"
+        type="range"
+        min="20"
+        max="100"
+        value="25"
+        class="mt-2 h-2 w-full cursor-pointer appearance-none rounded-lg bg-blue-500"
+      />
+    </div>
+    <div class="mx-auto max-w-6xl p-4">
+      <div class="grid grid-cols-2 gap-4 mx-auto md:grid-cols-3 lg:grid-cols-4">
+        <div class="overflow-hidden rounded-lg bg-gray-800">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Product"
+            class="h-32 w-full object-cover"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg bg-gray-800">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Product"
+            class="h-32 w-full object-cover"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg bg-gray-800">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Product"
+            class="h-32 w-full object-cover"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg bg-gray-800">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Product"
+            class="h-32 w-full object-cover"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg bg-gray-800">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Product"
+            class="h-32 w-full object-cover"
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg bg-gray-800">
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Product"
+            class="h-32 w-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
