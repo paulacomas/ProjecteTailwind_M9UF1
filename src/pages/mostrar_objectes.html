@@ -3,28 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Xat</title>
     <script type="module" src="../main.js"></script>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <title>Selecciona</title>
   </head>
+
   <body class="relative overflow-x-hidden bg-gray-900 text-white">
     <header class="hidden items-center justify-between bg-gray-800 p-4 md:flex">
-      <div class="text-xl">Xat</div>
+      <div class="text-xl">Selecciona</div>
       <nav>
         <ul class="flex space-x-6">
           <li>
-            <a href="home.html" class="hover:text-gray-400"
-              >Home</a
-            >
+            <a href="home.html" class="hover:text-gray-400">Home</a>
           </li>
           <li>
             <a href="new_object.html" class="hover:text-gray-400">New Post</a>
           </li>
-          <li><a href="xat.html" class="hover:text-gray-400">Messages</a></li>
-          <li><a href="serch.html" class="hover:text-gray-400">Search</a></li>
+          <li>
+            <a href="xat.html" class="hover:text-gray-400">Messages</a>
+          </li>
+          <li>
+            <a href="serch.html" class="hover:text-gray-400">Search</a>
+          </li>
           <li>
             <a href="perfil.html" class="hover:text-gray-400">Profile</a>
           </li>
@@ -33,7 +36,7 @@
     </header>
 
     <header class="flex items-center justify-between bg-gray-800 p-4 md:hidden">
-      <div class="text-xl">Xat</div>
+      <div class="text-xl">Search</div>
       <label
         for="menu-toggle"
         class="cursor-pointer text-xl"
@@ -74,71 +77,62 @@
         </li>
       </ul>
     </aside>
+
     <main class="mx-auto max-w-6xl p-4">
-      <div class="px-4 py-3">
-        <input
-          type="text"
-          placeholder="Cerca usuaris"
-          class="w-full rounded-lg bg-gray-700 p-2 text-white focus:outline-none"
-        />
+      <h1 class="mb-4 text-xl font-bold">Selecciona el teu producte</h1>
+      <p class="mb-6 text-gray-400">
+        Els teus productes amb un preu similar al objecte que vols obtenir
+      </p>
+
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+        <div class="rounded-lg bg-gray-800 p-4">
+          <a href="confirmar_proposta.html">
+            <img
+              src="../assets/cafetera.png"
+              alt="Coffee Machine"
+              class="mb-2 w-full h-40 object-cover rounded-lg"
+            />
+            <h2 class="text-sm font-semibold">Coffee Machine</h2>
+            <p class="text-gray-400">50€</p>
+          </a>
+        </div>
+
+        <div class="rounded-lg bg-gray-800 p-4">
+          <a href="confirmar_proposta.html">
+            <img
+              src="../assets/cafetera.png"
+              alt="Coffee Machine"
+              class="mb-2 w-full h-40 object-cover rounded-lg"
+            />
+            <h2 class="text-sm font-semibold">Coffee Machine</h2>
+            <p class="text-gray-400">50€</p>
+          </a>
+        </div>
+
+        <div class="rounded-lg bg-gray-800 p-4">
+          <a href="confirmar_proposta.html">
+            <img
+              src="ruta-a-tu-imagen.png"
+              alt="Coffee Machine"
+              class="mb-2 w-full h-40 object-cover rounded-lg"
+            />
+            <h2 class="text-sm font-semibold">Coffee Machine</h2>
+            <p class="text-gray-400">50€</p>
+          </a>
+        </div>
+
+        <div class="rounded-lg bg-gray-800 p-4">
+          <a href="confirmar_proposta.html">
+            <img
+              src="ruta-a-tu-imagen.png"
+              alt="Coffee Machine"
+              class="mb-2 w-full h-40 object-cover rounded-lg"
+            />
+            <h2 class="text-sm font-semibold">Coffee Machine</h2>
+            <p class="text-gray-400">50€</p>
+          </a>
+        </div>
       </div>
-
-      <div class="space-y-3 px-4">
-        <div class="flex items-center rounded-lg bg-gray-800 p-3">
-          <img
-            class="h-12 w-12 rounded-full object-cover"
-            src="https://via.placeholder.com/150"
-            alt="User profile picture"
-          />
-          <div class="ml-4">
-            <h2 class="text-md font-semibold">Laura</h2>
-            <p class="text-sm text-gray-400">Últim missatge</p>
-          </div>
-        </div>
-
-        <div class="flex items-center rounded-lg bg-gray-800 p-3">
-          <img
-            class="h-12 w-12 rounded-full object-cover"
-            src="https://via.placeholder.com/150"
-            alt="User profile picture"
-          />
-          <div class="ml-4">
-            <h2 class="text-md font-semibold">Alberto</h2>
-            <p class="text-sm text-gray-400">Últim missatge</p>
-          </div>
-        </div>
-
-        <div class="flex items-center rounded-lg bg-gray-800 p-3">
-          <img
-            class="h-12 w-12 rounded-full object-cover"
-            src="https://via.placeholder.com/150"
-            alt="User profile picture"
-          />
-          <div class="ml-4">
-            <h2 class="text-md font-semibold">Marcos</h2>
-            <p class="text-sm text-gray-400">Últim missatge</p>
-          </div>
-        </div>
-      </div>
-
-      <button
-        class="fixed bottom-6 right-6 rounded-full bg-blue-500 p-4 text-white shadow-lg focus:outline-none"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 4v16m8-8H4"
-          />
-        </svg>
-      </button>
     </main>
   </body>
 </html>

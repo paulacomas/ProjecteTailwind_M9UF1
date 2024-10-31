@@ -3,16 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../css/main.css" rel="stylesheet" />
-    <script src="../main.js"></script>
+    <script type="module" src="../main.js"></script>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+
     <title>Search</title>
   </head>
 
@@ -21,26 +17,22 @@
       <div class="text-xl">Search</div>
       <nav>
         <ul class="flex space-x-6">
-          <li><a href="../../public/index.html" class="hover:text-gray-400">Home</a></li>
           <li>
-            <a href="new_object.html" class="hover:text-gray-400"
-              >New Post</a
+            <a href="home.html" class="hover:text-gray-400"
+              >Home</a
             >
           </li>
           <li>
-            <a href="xat.html" class="hover:text-gray-400"
-              >Messages</a
-            >
+            <a href="new_object.html" class="hover:text-gray-400">New Post</a>
           </li>
           <li>
-            <a href="serch.html" class="hover:text-gray-400"
-              >Search</a
-            >
+            <a href="xat.html" class="hover:text-gray-400">Messages</a>
           </li>
           <li>
-            <a href="perfil.html" class="hover:text-gray-400"
-              >Profile</a
-            >
+            <a href="serch.html" class="hover:text-gray-400">Search</a>
+          </li>
+          <li>
+            <a href="perfil.html" class="hover:text-gray-400">Profile</a>
           </li>
         </ul>
       </nav>
@@ -68,7 +60,7 @@
       <ul class="space-y-6">
         <li class="flex items-center space-x-3">
           <span class="material-icons">home</span>
-          <a href="#" class="text-white">Home</a>
+          <a href="home.html" class="text-white">Home</a>
         </li>
         <li class="flex items-center space-x-3">
           <span class="material-icons">add</span>
@@ -76,7 +68,7 @@
         </li>
         <li class="flex items-center space-x-3">
           <span class="material-icons">message</span>
-          <a href="#" class="text-white">Messages</a>
+          <a href="xat.html" class="text-white">Messages</a>
         </li>
         <li class="flex items-center space-x-3">
           <span class="material-icons">search</span>
@@ -84,7 +76,7 @@
         </li>
         <li class="flex items-center space-x-3">
           <span class="material-icons">person</span>
-          <a href="#" class="text-white">Profile</a>
+          <a href="perfil.html" class="text-white">Profile</a>
         </li>
       </ul>
     </aside>

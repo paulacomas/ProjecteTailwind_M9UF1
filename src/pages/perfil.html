@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfil</title>
-    <link href="../css/main.css" rel="stylesheet" />
-    <script src="../main.js"></script>
+    <script type="module" src="../main.js"></script>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -17,9 +16,7 @@
       <nav>
         <ul class="flex space-x-6">
           <li>
-            <a href="../../public/index.html" class="hover:text-gray-400"
-              >Home</a
-            >
+            <a href="home.html" class="hover:text-gray-400">Home</a>
           </li>
           <li>
             <a href="new_object.html" class="hover:text-gray-400">New Post</a>
@@ -55,7 +52,7 @@
       <ul class="space-y-6">
         <li class="flex items-center space-x-3">
           <span class="material-icons">home</span>
-          <a href="../../public/index.html" class="text-white">Home</a>
+          <a href="home.html" class="text-white">Home</a>
         </li>
         <li class="flex items-center space-x-3">
           <span class="material-icons">add</span>
@@ -63,7 +60,7 @@
         </li>
         <li class="flex items-center space-x-3">
           <span class="material-icons">message</span>
-          <a href="#" class="text-white">Messages</a>
+          <a href="xat.html" class="text-white">Messages</a>
         </li>
         <li class="flex items-center space-x-3">
           <span class="material-icons">search</span>
@@ -75,6 +72,7 @@
         </li>
       </ul>
     </aside>
+
     <main class="mx-auto max-w-6xl p-4">
       <div class="min-h-screen bg-gray-900 p-4 font-sans text-white">
         <div class="flex flex-col items-center">
@@ -84,11 +82,20 @@
             class="mb-4 h-24 w-24 rounded-full object-cover"
           />
           <h2 class="text-xl font-semibold">Paula</h2>
-          <button
-            class="mx-auto mt-4 block max-w-xs rounded-lg bg-gray-700 px-4 py-2 text-center text-sm"
-          >
-            Editar perfil
-          </button>
+          <div class="flex space-x-2 mt-4">
+            <button
+              class="block h-10 w-36 rounded-lg bg-gray-700 px-4 py-2 text-center text-sm"
+            >
+              Editar perfil
+            </button>
+            <a href="/index.html" class="h-10 w-36">
+              <button
+                class="h-10 w-full rounded-lg bg-blue-600 px-4 py-2 text-center text-sm text-white hover:bg-blue-700"
+              >
+                Logout
+              </button>
+            </a>
+          </div>
           <p class="mt-4 max-w-xs text-center text-gray-300">
             I'm a UX designer who loves to travel. I have a lot of items that
             are gently used and would love to find a new home.
@@ -159,7 +166,7 @@
             >
               <div class="mb-3 flex items-center">
                 <img
-                  src="img/img-perfil.png"
+                  src="../assets/img-perfil.png"
                   alt="Alberto"
                   class="h-12 w-12 rounded-full"
                 />
@@ -167,39 +174,13 @@
               </div>
               <div class="flex items-center">
                 <img
-                  src="img/img1.png"
+                  src="../assets/cafetera.png"
                   alt="item 1"
                   class="h-20 w-20 rounded-lg object-cover sm:h-24 sm:w-24 md:h-32 md:w-32"
                 />
                 <span class="mx-2 text-lg">⇄</span>
                 <img
-                  src="img/img2.png"
-                  alt="item 2"
-                  class="h-20 w-20 rounded-lg object-cover sm:h-24 sm:w-24 md:h-32 md:w-32"
-                />
-              </div>
-            </div>
-
-            <div
-              class="flex w-64 flex-none flex-col items-center rounded-lg bg-gray-800 p-4 md:w-auto"
-            >
-              <div class="mb-3 flex items-center">
-                <img
-                  src="https://via.placeholder.com/40"
-                  alt="Alberto"
-                  class="h-12 w-12 rounded-full"
-                />
-                <span class="ml-3 text-lg font-semibold">Alberto</span>
-              </div>
-              <div class="flex items-center">
-                <img
-                  src="https://via.placeholder.com/40"
-                  alt="item 1"
-                  class="h-20 w-20 rounded-lg object-cover sm:h-24 sm:w-24 md:h-32 md:w-32"
-                />
-                <span class="mx-2 text-lg">⇄</span>
-                <img
-                  src="https://via.placeholder.com/40"
+                  src="../assets/crispetes.jpg"
                   alt="item 2"
                   class="h-20 w-20 rounded-lg object-cover sm:h-24 sm:w-24 md:h-32 md:w-32"
                 />
