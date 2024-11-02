@@ -1,4 +1,4 @@
-import "../src/css/main.css";
+import "../css/main.css";
 
 function toggleMenu() {
   const sideMenu = document.getElementById("side-menu");
