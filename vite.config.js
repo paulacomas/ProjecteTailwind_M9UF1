@@ -2,10 +2,10 @@ import { defineConfig } from "vite";
 import path from "path";
 
 export default defineConfig({
-  root: "./", // Mantiene el root en la raíz del proyecto
-  base: "./", // Usa rutas relativas para los recursos
+  root: "./",
+  base: "./",
   build: {
-    outDir: "dist", // Directorio de salida para la construcción
+    outDir: "dist",
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, "index.html"),
