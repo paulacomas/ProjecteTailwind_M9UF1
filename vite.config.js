@@ -1,17 +1,17 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  root: ".", // Usa el directorio raíz del proyecto
-  publicDir: "public", // Define la carpeta "public" como la de archivos públicos
+  root: "./", // Root directory for Vite
+  base: "./", // Use relative paths for assets
   build: {
-    outDir: "dist", // Define el directorio de salida
+    outDir: "dist", // Output directory for the build
     rollupOptions: {
-      input: "./public/index.html", // Define el punto de entrada
+      input: "./index.html", // Entry point for the build
     },
   },
   server: {
     watch: {
-      usePolling: true,
+      usePolling: true, // Ensures changes are detected in some environments
     },
   },
 });

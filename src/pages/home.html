@@ -11,31 +11,35 @@
     <title>Home</title>
   </head>
 
-  <body class="relative overflow-x-hidden bg-gray-900 text-white">
-    <header class="hidden items-center justify-between bg-gray-800 p-4 md:flex">
+  <body class="relative overflow-x-hidden bg-primary text-white">
+    <header
+      class="hidden items-center justify-between bg-secondary1 p-4 md:flex"
+    >
       <div class="text-xl">Home</div>
       <nav>
         <ul class="flex space-x-6">
           <li>
-            <a href="home.html" class="hover:text-gray-400">Home</a>
+            <a href="home.html" class="hover:text-hover">Home</a>
           </li>
           <li>
-            <a href="new_object.html" class="hover:text-gray-400">New Post</a>
+            <a href="new_object.html" class="hover:text-hover">New Post</a>
           </li>
           <li>
-            <a href="xat.html" class="hover:text-gray-400">Messages</a>
+            <a href="xat.html" class="hover:text-hover">Messages</a>
           </li>
           <li>
-            <a href="serch.html" class="hover:text-gray-400">Search</a>
+            <a href="serch.html" class="hover:text-hover">Search</a>
           </li>
           <li>
-            <a href="perfil.html" class="hover:text-gray-400">Profile</a>
+            <a href="perfil.html" class="hover:text-hover">Profile</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <header class="flex items-center justify-between bg-gray-800 p-4 md:hidden">
+    <header
+      class="flex items-center justify-between bg-secondary1 p-4 md:hidden"
+    >
       <div class="text-xl">Home</div>
       <label
         for="menu-toggle"
@@ -52,7 +56,7 @@
 
     <aside
       id="side-menu"
-      class="fixed right-0 top-16 z-50 h-full w-64 translate-x-full transform bg-gray-800 p-6 transition-transform duration-300 ease-in-out md:hidden"
+      class="fixed right-0 top-16 z-50 h-full w-64 translate-x-full transform bg-secondary1 p-6 transition-transform duration-300 ease-in-out md:hidden"
     >
       <ul class="space-y-6">
         <li class="flex items-center space-x-3">
@@ -84,7 +88,7 @@
           <input
             type="text"
             placeholder="Cerca items"
-            class="w-full rounded-md bg-gray-700 px-3 py-2 text-white"
+            class="w-full rounded-md bg-tertiary px-3 py-2 text-white"
           />
         </div>
 
@@ -97,7 +101,7 @@
         >
           <a
             href="proposta_detalls.html"
-            class="flex w-64 flex-none flex-col items-center rounded-lg bg-gray-800 p-4 md:w-auto"
+            class="flex w-64 flex-none flex-col items-center rounded-lg bg-secondary1 p-4 md:w-auto"
           >
             <div class="mb-3 flex items-center">
               <img
@@ -124,25 +128,25 @@
 
           <a
             href="proposta_detalls.html"
-            class="flex w-64 flex-none flex-col items-center rounded-lg bg-gray-800 p-4 md:w-auto"
+            class="flex w-64 flex-none flex-col items-center rounded-lg bg-secondary1 p-4 md:w-auto"
           >
             <div class="mb-3 flex items-center">
               <img
-                src="https://via.placeholder.com/40"
-                alt="Alberto"
-                class="h-12 w-12 rounded-full"
+                src="../assets/perfil1.jpg"
+                alt="Laura"
+                class="h-12 w-12 rounded-full object-cover"
               />
-              <span class="ml-3 text-lg font-semibold">Alberto</span>
+              <span class="ml-3 text-lg font-semibold">Laura</span>
             </div>
             <div class="flex items-center">
               <img
-                src="https://via.placeholder.com/40"
+                src="../assets/cojin.jpg"
                 alt="item 1"
                 class="h-20 w-20 rounded-lg object-cover sm:h-24 sm:w-24 md:h-32 md:w-32"
               />
               <span class="mx-2 text-lg">⇄</span>
               <img
-                src="https://via.placeholder.com/40"
+                src="../assets/manta.jpg"
                 alt="item 2"
                 class="h-20 w-20 rounded-lg object-cover sm:h-24 sm:w-24 md:h-32 md:w-32"
               />
@@ -151,25 +155,25 @@
 
           <a
             href="proposta_detalls.html"
-            class="flex w-64 flex-none flex-col items-center rounded-lg bg-gray-800 p-4 md:w-auto"
+            class="flex w-64 flex-none flex-col items-center rounded-lg bg-secondary1 p-4 md:w-auto"
           >
             <div class="mb-3 flex items-center">
               <img
-                src="https://via.placeholder.com/40"
+                src="../assets/perfil2.jpg"
                 alt="Alberto"
-                class="h-12 w-12 rounded-full"
+                class="h-12 w-12 rounded-full object-cover"
               />
-              <span class="ml-3 text-lg font-semibold">Alberto</span>
+              <span class="ml-3 text-lg font-semibold">Arnau</span>
             </div>
             <div class="flex items-center">
               <img
-                src="https://via.placeholder.com/40"
+                src="../assets/auriculares.jpg"
                 alt="item 1"
                 class="h-20 w-20 rounded-lg object-cover sm:h-24 sm:w-24 md:h-32 md:w-32"
               />
               <span class="mx-2 text-lg">⇄</span>
               <img
-                src="https://via.placeholder.com/40"
+                src="../assets/mouse.jpg"
                 alt="item 2"
                 class="h-20 w-20 rounded-lg object-cover sm:h-24 sm:w-24 md:h-32 md:w-32"
               />
@@ -178,7 +182,7 @@
         </div>
 
         <button
-          class="mx-auto mt-4 block max-w-xs rounded-lg bg-gray-700 px-4 py-2 text-center text-sm"
+          class="mx-auto mt-4 block max-w-xs rounded-lg bg-tertiary px-4 py-2 text-center text-sm"
         >
           Veure mes propostes
         </button>
@@ -189,50 +193,50 @@
         <div
           class="flex space-x-4 overflow-x-auto md:grid md:grid-cols-2 md:gap-4 md:space-x-0 lg:grid-cols-4"
         >
-          <div class="w-40 flex-none rounded-lg bg-gray-800 p-2 md:w-auto">
+          <div class="w-60 flex-none rounded-lg bg-primary p-2 md:w-auto">
             <a href="detalls.html">
               <img
                 src="../assets/cafetera.png"
                 alt="Coffee Machine"
-                class="h-32 w-full rounded-lg object-cover"
+                class="h-60 w-full rounded-lg object-cover"
               />
             </a>
-            <p class="mt-1 text-center text-sm">Coffee Machine</p>
+            <p class="mt-1 text-left text-sm">Maquina de cafe</p>
           </div>
-          <div class="w-40 flex-none rounded-lg bg-gray-800 p-2 md:w-auto">
+          <div class="w-60 flex-none rounded-lg bg-primary p-2 md:w-auto">
             <a href="detalls.html">
               <img
-                src="../assets/bag.png"
+                src="../assets/bags.jpg"
                 alt="Designer Bag"
-                class="h-32 w-full rounded-lg object-cover"
+                class="h-60 w-full rounded-lg object-cover"
               />
             </a>
-            <p class="mt-1 text-center text-sm">Designer Bag</p>
+            <p class="mt-1 text-left text-sm">Motxilla</p>
           </div>
-          <div class="w-40 flex-none rounded-lg bg-gray-800 p-2 md:w-auto">
+          <div class="w-60 flex-none rounded-lg bg-primary p-2 md:w-auto">
             <a href="detalls.html">
               <img
-                src="https://via.placeholder.com/100"
+                src="../assets/rellotge.jpeg"
                 alt="Designer Bag"
-                class="h-32 w-full rounded-lg object-cover"
+                class="h-60 w-full rounded-lg object-cover"
               />
             </a>
-            <p class="mt-1 text-center text-sm">Designer Bag</p>
+            <p class="mt-1 text-left text-sm">Rellotge</p>
           </div>
-          <div class="w-40 flex-none rounded-lg bg-gray-800 p-2 md:w-auto">
+          <div class="w-60 flex-none rounded-lg bg-primary p-2 md:w-auto">
             <a href="detalls.html">
               <img
-                src="https://via.placeholder.com/100"
+                src="../assets/zelda.jpg"
                 alt="Designer Bag"
-                class="h-32 w-full rounded-lg object-cover"
+                class="h-60 w-full rounded-lg object-cover"
               />
             </a>
-            <p class="mt-1 text-center text-sm">Designer Bag</p>
+            <p class="mt-1 text-left text-sm">Joc switch</p>
           </div>
         </div>
 
         <button
-          class="mx-auto mt-4 block max-w-xs rounded-lg bg-gray-700 px-4 py-2 text-center text-sm"
+          class="mx-auto mt-4 block max-w-xs rounded-lg bg-tertiary px-4 py-2 text-center text-sm"
         >
           Veure mes objectes recomenats
         </button>

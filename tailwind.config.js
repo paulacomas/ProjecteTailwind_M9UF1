@@ -7,40 +7,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#111827",
         secondary1: "#1f2937",
+        primary: "#111827",
         secondary2: "#2563eb",
-        tertiary: "",
+        tertiary: "#374151",
+        hover: "#9ca3af",
+        hover2: "#1A80E5",
+      },
+      fontFamily: {
+        sans: ["Monrope", "sans-serif"], // Set 'Monrope' as the primary sans font
       },
     },
   },
   plugins: [],
 };
-
-// extend: {
-//   spacing: {
-//     '128': '32rem',
-//     '144': '36rem',
-//   },
-//   borderRadius: {
-//     '4xl': '2rem',
-//   },
-//   fontFamily: {
-//     sans: ['Graphik', 'sans-serif'],
-//     serif: ['Merriweather', 'serif'],
-//   },
-//   fontSize: {
-//     'xs': '.75rem',
-//     'sm': '.875rem',
-//     'tiny': '.875rem',
-//     'base': '1rem',
-//     'lg': '1.125rem',
-//     'xl': '1.25rem',
-//     '2xl': '1.5rem',
-//     '3xl': '1.875rem',
-//     '4xl': '2.25rem',
-//     '5xl': '3rem',
-//     '6xl': '4rem',
-//     '7xl': '5rem',
-//   },
-// },

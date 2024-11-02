@@ -12,32 +12,36 @@
   </head>
 
   <body
-    class="relative overflow-x-hidden bg-gray-900 text-white h-screen flex flex-col"
+    class="relative overflow-x-hidden bg-primary text-white h-screen flex flex-col"
   >
-    <header class="hidden items-center justify-between bg-gray-800 p-4 md:flex">
+    <header
+      class="hidden items-center justify-between bg-secondary1 p-4 md:flex"
+    >
       <div class="text-xl">Detalls</div>
       <nav>
         <ul class="flex space-x-6">
           <li>
-            <a href="home.html" class="hover:text-gray-400">Home</a>
+            <a href="home.html" class="hover:text-hover">Home</a>
           </li>
           <li>
-            <a href="new_object.html" class="hover:text-gray-400">New Post</a>
+            <a href="new_object.html" class="hover:text-hover">New Post</a>
           </li>
           <li>
-            <a href="xat.html" class="hover:text-gray-400">Messages</a>
+            <a href="xat.html" class="hover:text-hover">Messages</a>
           </li>
           <li>
-            <a href="serch.html" class="hover:text-gray-400">Search</a>
+            <a href="serch.html" class="hover:text-hover">Search</a>
           </li>
           <li>
-            <a href="perfil.html" class="hover:text-gray-400">Profile</a>
+            <a href="perfil.html" class="hover:text-hover">Profile</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <header class="flex items-center justify-between bg-gray-800 p-4 md:hidden">
+    <header
+      class="flex items-center justify-between bg-secondary1 p-4 md:hidden"
+    >
       <div class="text-xl">Detalls</div>
       <label
         for="menu-toggle"
@@ -54,7 +58,7 @@
 
     <aside
       id="side-menu"
-      class="fixed right-0 top-16 z-50 h-full w-64 translate-x-full transform bg-gray-800 p-6 transition-transform duration-300 ease-in-out md:hidden"
+      class="fixed right-0 top-16 z-50 h-full w-64 translate-x-full transform bg-secondary1 p-6 transition-transform duration-300 ease-in-out md:hidden"
     >
       <ul class="space-y-6">
         <li class="flex items-center space-x-3">
@@ -91,12 +95,12 @@
             class="h-96 w-96 rounded-lg object-cover flex-shrink-0"
           />
           <img
-            src="../assets/cafetera.png"
+            src="../assets/cafetera2.jpg"
             alt="Cafetera"
             class="h-96 w-96 rounded-lg object-cover flex-shrink-0"
           />
           <img
-            src="../assets/cafetera.png"
+            src="../assets/cafetera3.jpg"
             alt="Cafetera"
             class="h-96 w-96 rounded-lg object-cover flex-shrink-0"
           />
@@ -113,14 +117,14 @@
         </div>
         <div class="flex flex-col items-center">
           <img
-            src="../assets/cafetera.png"
+            src="../assets/cafetera2.jpg"
             alt="Cafetera"
             class="h-[300px] w-[400px] rounded-lg object-cover"
           />
         </div>
         <div class="flex flex-col items-center">
           <img
-            src="../assets/cafetera.png"
+            src="../assets/cafetera3.jpg"
             alt="Cafetera"
             class="h-[300px] w-[400px] rounded-lg object-cover"
           />
@@ -129,19 +133,26 @@
     </main>
 
     <div class="w-full max-w-md mt-8 mx-auto text-center md:text-center">
-      <p class="text-gray-400 mt-1">Aquí va la descripció</p>
+      <h2 class="text-white text-2xl font-semibold">Cafetera</h2>
+      <p class="text-gray-400 mt-4">
+        La Cafetera Espresso Automática "Café Maestro" es la compañera ideal
+        para los amantes del café que buscan calidad y comodidad en cada taza.
+        Con un diseño elegante y moderno, esta cafetera no solo destaca por su
+        apariencia, sino también por su tecnología avanzada que garantiza un
+        sabor excepcional.
+      </p>
       <p class="text-white text-2xl font-semibold mt-2">50€</p>
     </div>
 
     <div class="w-full max-w-md mt-8 mx-auto flex flex-col space-y-4 mb-8">
       <a
         href="mostrar_objectes.html"
-        class="bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-600 transition text-center block"
+        class="bg-secondary2 text-white py-3 rounded-lg font-semibold hover:bg-hover2 transition text-center block"
       >
         Intercanviar
       </a>
       <button
-        class="bg-gray-700 text-white py-3 rounded-lg font-semibold hover:bg-gray-600 transition"
+        class="bg-tertiary text-white py-3 rounded-lg font-semibold hover:bg-hover transition"
       >
         Enviar missatge al vendedor
       </button>
