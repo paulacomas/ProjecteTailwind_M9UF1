@@ -41,7 +41,7 @@
 
 - **Consistència:** L'aplicació manté la mateixa tipografia, colors i botons per a tota l’aplicació. Això fa que l'usuari es familiaritzi molt més ràpid amb l'aplicació.
 
-## 6. Decisions addicionals i justificació
+## 6. Justificació de la tipografia i colors
 
 - **Tipografia:** S'ha escollit la tipografia sans-serif _Manrope_, per tenir una bona llegibilitat tant en pantalles petites com grans, mantenint un estil modern i net.
 
